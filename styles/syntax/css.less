@@ -1,0 +1,43 @@
+.syntax--css {
+  &.syntax--selector {
+    color: @syntax-text-color;
+  }
+
+  &.syntax--hex-value,
+  &.syntax--rgb-value {
+    color: @syntax-color-string;
+
+    & > * {
+      color: inherit;
+    }
+  }
+
+  &.syntax--operator {
+    color: @hue-6;
+  }
+
+  &.syntax--tag.syntax--name {
+    color: @hue-6;
+
+    .syntax--property-list & {
+      color: @syntax-text-color;
+    }
+  }
+
+  &.syntax--attribute-name.syntax--class {
+    color: @syntax-color-class;
+  }
+
+  &.syntax--attribute-name.syntax--parent-selector {
+    color: @hue-1;
+  }
+
+  // highlight properties if they are supported
+  &.syntax--property-name {
+    font-style: italic;
+  }
+
+  &.syntax--support {
+    font-style: normal;
+  }
+}

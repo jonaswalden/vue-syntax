@@ -1,0 +1,16 @@
+{
+  "name": "vue-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Imitation of the Vue lib examples theme",
+  "keywords": [
+    "vue",
+    "light",
+    "syntax"
+  ],
+  "repository": "https://github.com/jonaswalden/vue-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  }
+}

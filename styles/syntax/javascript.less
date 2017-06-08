@@ -1,0 +1,44 @@
+.syntax--js {
+  &.syntax--variable {
+    color: @syntax-text-color;
+  }
+
+  &.syntax--parameters .syntax--variable {
+    color: @hue-1;
+  }
+
+  .syntax--operator {
+    color: @syntax-text-color;
+
+    // keywords are definded in https://github.syntax--com/atom/language-javascript/blob/master/grammars/javascript.syntax--cson
+    // search "instanceof" for location
+    &.syntax--delete,
+    &.syntax--in,
+    &.syntax--of,
+    &.syntax--instanceof,
+    &.syntax--new,
+    &.syntax--typeof,
+    &.syntax--void {
+      color: @hue-3;
+    }
+  }
+
+  &.syntax--meta {
+    color: @syntax-text-color;
+  }
+
+  &.syntax--builtin,
+  &.syntax--support {
+    color: @hue-6;
+  }
+
+  &.syntax--control {
+    color: @hue-7;
+  }
+
+  &.syntax--assignment,
+  &.syntax--comparison,
+  &.syntax--relational {
+    color: @hue-6;
+  }
+}

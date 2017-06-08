@@ -1,0 +1,15 @@
+.syntax--scss:extend(.syntax--css all),
+.syntax--sass:extend(.syntax--css all) {
+  &.syntax--at-rule {
+    .syntax--at-rule {
+      &,
+      .syntax--punctuation {
+        color: @hue-3;
+      }
+    }
+  }
+
+  &.syntax--tag.syntax--name.syntax--reference {
+    color: @hue-1;
+  }
+}
